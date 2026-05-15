@@ -1,0 +1,21 @@
+[package]
+name = "uniffi_repro"
+version = "0.0.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "staticlib"]
+name = "uniffi_repro"
+
+[dependencies]
+uniffi = { git = "https://github.com/mozilla/uniffi-rs", branch = "main", features = ["cli"] }
+
+[build-dependencies]
+uniffi = { git = "https://github.com/mozilla/uniffi-rs", branch = "main", features = ["build"] }
+
+[[bin]]
+name = "uniffi-bindgen"
+path = "src/bin/uniffi-bindgen.rs"
+
+[features]
+default = []

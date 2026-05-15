@@ -1,0 +1,19 @@
+# Rust
+rust/target/
+rust/generated/
+rust/Cargo.lock
+
+# Android / Gradle
+android/.gradle/
+android/build/
+android/app/build/
+android/.kotlin/
+android/local.properties
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# macOS
+.DS_Store
